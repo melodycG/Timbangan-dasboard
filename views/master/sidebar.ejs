@@ -1,0 +1,79 @@
+<div class="profile">
+    <a href="/profile">
+        <img src="http://203.194.112.19/img/userfoto.png" alt="profile_picture">
+    </a>
+    <h3>
+        <%=nama%>
+    </h3>
+    <a href="/profile">
+        <p>
+            <%= role %>
+        </p>
+    </a>
+</div>
+<ul>
+    <li>
+        <a href="/home" class="<% if(url == '/home') { %> active <% } %>">
+            <span class="icon"><i class="fas fa-home"></i></span>
+            <span class="item">Home</span>
+        </a>
+    </li>
+    <li>
+        <a href="/report" class="<% if(url == '/report') { %> active <% } %>">
+            <span class="icon"><i class="fas fa-chart-line"></i></span>
+            <span class="item">Reports</span>
+        </a>
+    </li>
+    <!-- <li>
+        <a href="/driver" class="<% if(url == '/driver') { %> active <% } %>">
+            <span class="icon"><i class="fas fa-chart-line"></i></span>
+            <span class="item">Driver</span>
+        </a>
+    </li> -->
+    <% if(role=='superadmin' ) { %>
+        <li>
+            <a href="/jenis-rumput" class="<% if(url == '/jenis-rumput') { %> active <% } %>">
+                <span class="icon"><i class="fa-solid fa-cannabis"></i></span>
+                <span class="item">Jenis Rumput</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="/asal-rumput" class="<% if(url == '/asal-rumput') { %> active <% } %>">
+                <span class="icon"><i class="fa-solid fa-cannabis"></i></span>
+                <span class="item">Asal Rumput</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="/truk" class="<% if(url == '/truk') { %> active <% } %>">
+                <span class="icon"><i class="fa-solid fa-truck"></i></span>
+                <span class="item">Truk</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="/user" class="<% if(url == '/user') { %> active <% } %>">
+                <span class="icon"><i class="fa-solid fa-users"></i></span>
+                <span class="item">User</span>
+            </a>
+        </li>
+        <% } %>
+            <!-- <li>
+        <a href="/email" class="<% if(url == '/email') { %> active <% } %>">
+            <span class="icon"><i class="fas fa-user-friends"></i></span>
+            <span class="item">Email</span>
+        </a>
+    </li> -->
+            <!-- <li>
+        <a href="#">
+            <span class="icon"><i class="fas fa-user-shield"></i></span>
+            <span class="item">Admin</span>
+        </a>
+    </li> -->
+            <li>
+                <a href="auth/logout" class="logout mt-5">
+                    <span class="item">LogOut</span>
+                </a>
+            </li>
+</ul>
