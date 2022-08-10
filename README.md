@@ -23,4 +23,4 @@ pm2 log
 pm2 status
 
 #Doc File
-<img src="https://github.com/sourchib/portofolio/blob/main/web.png">
+<img src="https://github.com/sourchib/Timbangan-dasboard/blob/master/web.png">
