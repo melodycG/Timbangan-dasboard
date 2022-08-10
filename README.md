@@ -21,3 +21,6 @@ pm2 restart 0 --name timbangan --cron '58 * * * *' --no-autorestart
 pm2 log
 <h3>Status ID node</h3>
 pm2 status
+
+#Doc File
+<img src="https://github.com/sourchib/portofolio/blob/main/web.png">
